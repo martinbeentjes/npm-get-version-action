@@ -1,0 +1,9 @@
+name: 'Get current package version'
+description: 'Get the current version of the npm package'
+outputs:
+  current-version:
+    description: 'Current version defined in the package.json file'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
