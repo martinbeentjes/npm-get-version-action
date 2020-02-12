@@ -1,7 +1,8 @@
 name: 'Get current package version'
 description: 'Get the current version of the npm package'
-color: 'gray-dark'
-icon: 'align-center'
+branding:
+  color: 'gray-dark'
+  icon: 'align-center'
 outputs:
   current-version:
     description: 'Current version defined in the package.json file'
