@@ -11,4 +11,4 @@ To use this action in your project, use the following:
    uses: martinbeentjes/npm-get-version-action@v1
 ```
 
-The Action sets an output variable called `current-version` which can be used in a following step by using `${{ steps.get-npm-version.outputs.current-version}}``.
+The Action sets an output variable called `current-version` which can be used in a following step by using `${{ steps.get-npm-version.outputs.current-version}}`.
