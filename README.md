@@ -7,9 +7,9 @@ This GitHub Action retrieves the package version from the package.json file and 
 To use this action in your project, use the following:
 
 ```yaml
- - name: get-npm-version
-   id: packageVersion
-   uses: martinbeentjes/npm-get-version-action@master
+- name: get-npm-version
+  id: package-version
+  uses: martinbeentjes/npm-get-version-action@master
 ```
 
-The Action sets an output variable called `current-version` which can be used in a following step by using `${{ steps.packageVersion.outputs.current-version}}`.
+The Action sets an output variable called `current-version` which can be used in a following step by using `${{ steps.package-version.outputs.current-version}}`.
