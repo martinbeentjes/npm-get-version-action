@@ -3,10 +3,16 @@ description: 'Get the current version of the npm package'
 branding:
   color: 'gray-dark'
   icon: 'align-center'
+inputs:
+  path:
+    required: false
+    default: ''
+    description: 'Path to package.json file (directories only), e.g. packages/mypackage/'
 outputs:
   current-version:
     description: 'Current version defined in the package.json file'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-
+  args:
+    - ${{ inputs.path }}
