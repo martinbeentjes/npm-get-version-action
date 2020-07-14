@@ -6,7 +6,7 @@ branding:
 inputs:
   path:
     required: false
-    default: ''
+    default: '.'
     description: 'Path to package.json file (directories only), e.g. packages/mypackage/'
 outputs:
   current-version:
