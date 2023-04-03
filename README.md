@@ -9,7 +9,7 @@ To use this action in your project, use the following:
 ```yaml
 - name: get-npm-version
   id: package-version
-  uses: martinbeentjes/npm-get-version-action@main
+  uses: martinbeentjes/npm-get-version-action@v1.3.1
 ```
 
 The Action sets an output variable called `current-version` which can be used in a following step by using `${{ steps.package-version.outputs.current-version}}`.
@@ -19,7 +19,7 @@ If you are using a monorepo or otherwise have some packages in a subdirectory of
 ```yaml
 - name: get-npm-version
   id: package-version
-  uses: martinbeentjes/npm-get-version-action@v1.3.0
+  uses: martinbeentjes/npm-get-version-action@v1.3.1
   with:
     path: packages/<yourpackage>
 ```
