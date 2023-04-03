@@ -19,7 +19,7 @@ If you are using a monorepo or otherwise have some packages in a subdirectory of
 ```yaml
 - name: get-npm-version
   id: package-version
-  uses: martinbeentjes/npm-get-version-action@main
+  uses: martinbeentjes/npm-get-version-action@v1.3.0
   with:
     path: packages/<yourpackage>
 ```
