@@ -1,5 +1,5 @@
 name: 'Get current package version'
-description: 'Get the current version of the npm package'
+description: 'Get the current version of the setup.py'
 branding:
   color: 'gray-dark'
   icon: 'align-center'
@@ -7,10 +7,10 @@ inputs:
   path:
     required: false
     default: '.'
-    description: 'Path to package.json file (directories only), e.g. packages/mypackage/'
+    description: 'Path to setup.py file (directories only), e.g. packages/mypackage/'
 outputs:
   current-version:
-    description: 'Current version defined in the package.json file'
+    description: 'Current version defined in the setup.py file'
 runs:
   using: 'docker'
   image: 'Dockerfile'
