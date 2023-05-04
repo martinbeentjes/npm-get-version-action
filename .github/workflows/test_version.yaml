@@ -1,0 +1,22 @@
+name: Test get python version 
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  create-release-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: get-package-version
+        id: package-version
+        uses: bols-blue-org/python-get-version-action@main
+
+      - name: echo-package-version
+        id: echo-version
+        run: |
+          echo v${{ steps.package-version.outputs.current-version}}
+
